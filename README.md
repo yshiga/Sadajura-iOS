@@ -1,4 +1,4 @@
-[![RelatedCode](http://relatedcode.com/github/header88.png)](http://relatedcode.com/premium)
+[![ChatExamples](http://relatedcode.com/github/header4.png)](http://chatexamples.com)
 
 ## OVERVIEW
 
@@ -35,21 +35,21 @@ The app is using Parse as backend which is basically free. (Free plan: 20 GB Fil
 - Sending text messages
 - Sending pictures
 - Sending videos
-- Sending audio messages - **[Premium only](http://relatedcode.com/premium)**
-- Sending location - **[Premium only](http://relatedcode.com/premium)**
-- Sending stickers (<i>new</i>) - **[Premium only](http://relatedcode.com/premium)**
+- Sending audio messages - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Sending location - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Sending stickers (<i>new</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
 - Sending emojis
-- Typing indicator - **[Premium only](http://relatedcode.com/premium)**
-- Message delivery receipt - **[Premium only](http://relatedcode.com/premium)**
-- Message read receipt - **[Premium only](http://relatedcode.com/premium)**
-- Delete unread messages - **[Premium only](http://relatedcode.com/premium)**
-- Block user functionality (<i>new</i>) - **[Premium only](http://relatedcode.com/premium)**
-- Report user functionality (<i>new</i>) - **[Premium only](http://relatedcode.com/premium)**
+- Typing indicator - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Message delivery receipt - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Message read receipt - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Delete unread messages - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Block user functionality (<i>new</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Report user functionality (<i>new</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
 - Address Book access
 - Invite functionality - SMS, email
 - Facebook friend list
 - Recent view for ongoing chats
-- Map view for shared locations - **[Premium only](http://relatedcode.com/premium)**
+- Map view for shared locations - **[Premium only](http://relatedcode.com/realtimepremium)**
 - Picture view for pictures
 - Basic Settings view included
 - Profile view for users (<i>new</i>)
@@ -57,7 +57,7 @@ The app is using Parse as backend which is basically free. (Free plan: 20 GB Fil
 - Blocked view for blocked users (<i>new</i>)
 - Privacy Policy view
 - Terms of Service view
-- In-app push notification settings (<i>coming soon</i>) - **[Premium only](http://relatedcode.com/premium)**
+- In-app push notification settings (<i>coming soon</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
 - Facebook profile picture grabbed automatically
 - Twitter profile picture grabbed automatically (<i>coming soon</i>)
 - Video length limit possibility
