@@ -24,11 +24,11 @@ The app is using Parse as backend which is basically free. (Free plan: 20 GB Fil
 - Group chat functionality
 - Private chat functionality
 - Single or Multiple recipients
-- Full realtime actions - latency less than 100 ms - **[Premium only](http://relatedcode.com/premium)**
+- Full realtime actions - latency less than 100 ms - **[Premium only](http://relatedcode.com/realtimepremium)**
 - No backend programming needed
 - Native and easy to customize user interface
 - Push Notification support
-- Deep linking for Push Notification (<i>coming soon</i>) - **[Premium only](http://relatedcode.com/premium)**
+- Deep linking for Push Notification (<i>coming soon</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
 - Login with Email
 - Login with Facebook
 - Login with Twitter
