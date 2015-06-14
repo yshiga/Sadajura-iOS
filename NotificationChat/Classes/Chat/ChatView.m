@@ -489,11 +489,11 @@
 {
 	[gridMenu dismissAnimated:NO];
 	if ([item.title isEqualToString:@"Camera"])		PresentMultiCamera(self, YES);
-	if ([item.title isEqualToString:@"Audio"])		PresentPremium(self);
+	if ([item.title isEqualToString:@"Audio"])		ActionPremium(self);
 	if ([item.title isEqualToString:@"Pictures"])	PresentPhotoLibrary(self, YES);
 	if ([item.title isEqualToString:@"Videos"])		PresentVideoLibrary(self, YES);
-	if ([item.title isEqualToString:@"Location"])	PresentPremium(self);
-	if ([item.title isEqualToString:@"Stickers"])	PresentPremium(self);
+	if ([item.title isEqualToString:@"Location"])	ActionPremium(self);
+	if ([item.title isEqualToString:@"Stickers"])	ActionPremium(self);
 }
 
 #pragma mark - UIImagePickerControllerDelegate

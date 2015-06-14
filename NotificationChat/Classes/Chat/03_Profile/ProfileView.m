@@ -137,7 +137,7 @@
 	{
 		if (user != nil)
 		{
-			PresentPremium(self);
+			ActionPremium(self);
 		}
 	}
 }
@@ -150,7 +150,7 @@
 	{
 		if (user != nil)
 		{
-			PresentPremium(self);
+			ActionPremium(self);
 		}
 	}
 }

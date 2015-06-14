@@ -23,7 +23,14 @@
 #define		COLOR_INCOMING						HEXCOLOR(0xE6E5EAFF)
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-#define		MESSAGE_INVITE						@"Check out PremiumChat. More info: https://relatedcode.com/premium"
+#define		SCREEN_WIDTH						[UIScreen mainScreen].bounds.size.width
+#define		SCREEN_HEIGHT						[UIScreen mainScreen].bounds.size.height
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+#define		PREMIUM_LINK						@"http://www.relatedcode.com/realtimepremium"
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+#define		MESSAGE_INVITE						@"Check out chatexamples.com"
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 #define		PF_INSTALLATION_CLASS_NAME			@"_Installation"		//	Class name
