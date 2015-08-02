@@ -37,7 +37,7 @@
 	BOOL isLoading;
 	BOOL initialized;
 
-	NSString *groupId;
+    NSString *recipient;
 
 	NSMutableArray *users;
 	NSMutableArray *messages;
@@ -53,11 +53,11 @@
 @implementation ChatView
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-- (id)initWith:(NSString *)groupId_
+- (id)initWith:(NSString *)recipient_
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	self = [super init];
-	groupId = groupId_;
+    recipient = recipient_;
 	return self;
 }
 
@@ -101,7 +101,7 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	[super viewWillDisappear:animated];
-	ClearRecentCounter(groupId);
+	ClearRecentCounter(recipient);
 	[timer invalidate];
 }
 
@@ -117,7 +117,7 @@
 		JSQMessage *message_last = [messages lastObject];
 
 		PFQuery *query = [PFQuery queryWithClassName:PF_MESSAGE_CLASS_NAME];
-		[query whereKey:PF_MESSAGE_GROUPID equalTo:groupId];
+		[query whereKey:PF_MESSAGE_RECIPIENT equalTo:recipient];
 		if (message_last != nil) [query whereKey:PF_MESSAGE_CREATEDAT greaterThan:message_last.date];
 		[query includeKey:PF_MESSAGE_USER];
 		[query orderByDescending:PF_MESSAGE_CREATEDAT];
@@ -239,7 +239,8 @@
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	PFObject *object = [PFObject objectWithClassName:PF_MESSAGE_CLASS_NAME];
 	object[PF_MESSAGE_USER] = [PFUser currentUser];
-	object[PF_MESSAGE_GROUPID] = groupId;
+	object[PF_MESSAGE_RECIPIENT] = recipient;
+    object[PF_MESSAGE_SENDER] = [PFUser currentUser].objectId;
 	object[PF_MESSAGE_TEXT] = text;
 	if (fileVideo != nil) object[PF_MESSAGE_VIDEO] = fileVideo;
 	if (filePicture != nil) object[PF_MESSAGE_PICTURE] = filePicture;
@@ -253,8 +254,8 @@
 		else [ProgressHUD showError:@"Network error."];;
 	}];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	SendPushNotification(groupId, text);
-	UpdateRecentCounter(groupId, 1, text);
+//	SendPushNotification(groupId, text);
+//	UpdateRecentCounter(recipient, 1, text);
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	[self finishSendingMessage];
 }

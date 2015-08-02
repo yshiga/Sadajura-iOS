@@ -63,7 +63,10 @@
 //-----------------------------------------------------------------------
 #define		PF_MESSAGE_CLASS_NAME				@"Message"				//	Class name
 #define		PF_MESSAGE_USER						@"user"					//	Pointer to User Class
-#define		PF_MESSAGE_GROUPID					@"groupId"				//	String
+//#define		PF_MESSAGE_GROUPID					@"groupId"				//	String
+#define		PF_MESSAGE_SENDER   @"sender"
+#define		PF_MESSAGE_RECIPIENT @"recipient"
+
 #define		PF_MESSAGE_TEXT						@"text"					//	String
 #define		PF_MESSAGE_PICTURE					@"picture"				//	File
 #define		PF_MESSAGE_VIDEO					@"video"				//	File
@@ -76,6 +79,7 @@
 #define		PF_RECENT_CLASS_NAME				@"Recent"				//	Class name
 #define		PF_RECENT_USER						@"user"					//	Pointer to User Class
 #define		PF_RECENT_GROUPID					@"groupId"				//	String
+
 #define		PF_RECENT_MEMBERS					@"members"				//	Array
 #define		PF_RECENT_DESCRIPTION				@"description"			//	String
 #define		PF_RECENT_LASTUSER					@"lastUser"				//	Pointer to User Class

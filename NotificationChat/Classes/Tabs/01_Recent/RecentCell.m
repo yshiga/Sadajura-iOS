@@ -47,18 +47,18 @@
 	imageUser.layer.cornerRadius = imageUser.frame.size.width/2;
 	imageUser.layer.masksToBounds = YES;
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	PFUser *lastUser = recent[PF_RECENT_LASTUSER];
-	[imageUser setFile:lastUser[PF_USER_PICTURE]];
-	[imageUser loadInBackground];
+//	PFUser *lastUser = recent[PF_USER_FULLNAME];
+//	[imageUser setFile:lastUser[PF_USER_PICTURE]];
+//	[imageUser loadInBackground];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	labelDescription.text = recent[PF_RECENT_DESCRIPTION];
-	labelLastMessage.text = recent[PF_RECENT_LASTMESSAGE];
+	labelDescription.text = recent[PF_USER_FULLNAME];
+//	labelLastMessage.text = recent[PF_RECENT_LASTMESSAGE];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	NSTimeInterval seconds = [[NSDate date] timeIntervalSinceDate:recent[PF_RECENT_UPDATEDACTION]];
-	labelElapsed.text = TimeElapsed(seconds);
+//	NSTimeInterval seconds = [[NSDate date] timeIntervalSinceDate:recent[PF_USER_OBJECTID]];
+//	labelElapsed.text = TimeElapsed(seconds);
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	int counter = [recent[PF_RECENT_COUNTER] intValue];
-	labelCounter.text = (counter == 0) ? @"" : [NSString stringWithFormat:@"%d new", counter];
+//	int counter = [recent[PF_RECENT_COUNTER] intValue];
+//	labelCounter.text = (counter == 0) ? @"" : [NSString stringWithFormat:@"%d new", counter];
 }
 
 @end

@@ -25,7 +25,8 @@
 
 @property (strong, nonatomic) RecentView *recentView;
 @property (strong, nonatomic) GroupsView *groupsView;
-@property (strong, nonatomic) PeopleView *peopleView;
+//@property (strong, nonatomic) PeopleView *peopleView;
+@property (strong, nonatomic) SelectSingleView *peopleView;
 @property (strong, nonatomic) SettingsView *settingsView;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;

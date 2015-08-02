@@ -49,7 +49,8 @@
 
 	self.recentView = [[RecentView alloc] init];
 	self.groupsView = [[GroupsView alloc] init];
-	self.peopleView = [[PeopleView alloc] init];
+//	self.peopleView = [[PeopleView alloc] init];
+	self.peopleView = [[SelectSingleView alloc] init];
 	self.settingsView = [[SettingsView alloc] init];
 
 	NavigationController *navController1 = [[NavigationController alloc] initWithRootViewController:self.recentView];
