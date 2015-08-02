@@ -11,7 +11,7 @@
 #ifndef app_MyChatView_h
 #define app_MyChatView_h
 
-@interface MyChatView: JSQMessagesViewController
+@interface MyChatView: JSQMessagesViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 
 - (id)initWith:(NSString *)recipient_;
 

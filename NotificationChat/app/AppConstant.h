@@ -60,6 +60,7 @@
 #define		PF_MESSAGE_SENDER                   @"sender"
 #define		PF_MESSAGE_RECIPIENT                @"receiver"
 #define		PF_MESSAGE_TEXT						@"message"					//	String
+#define		PF_MESSAGE_PHOTO                    @"file"
 #define		PF_MESSAGE_CREATEDAT				@"createdAt"			//	Date
 //-----------------------------------------------------------------------
 #define		PF_PEOPLE_CLASS_NAME				@"People"				//	Class name

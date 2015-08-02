@@ -56,10 +56,85 @@
     [self loadMessages];
 }
 
+- (void)didPressAccessoryButton:(UIButton *)sender
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+{
+    
+    [self showActionSheet];
+    
+}
+
+- (void)takePhoto{
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+}
+
+- (void)selectPhoto {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+//    self.imageView.image = chosenImage;
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+    PFFile* filePicture = [PFFile fileWithName:@"ios_iamge.png" data:UIImageJPEGRepresentation(chosenImage, 0.6)];
+    
+    
+    PFObject *object = [PFObject objectWithClassName:PF_MESSAGE_CLASS_NAME];
+    object[PF_MESSAGE_SENDER] = [PFUser currentUser][PF_USER_USERNAME];
+	object[PF_MESSAGE_RECIPIENT] = recipient;
+    object[PF_MESSAGE_PHOTO] = filePicture;
+ 	[object saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
+	{
+		if (error == nil)
+		{
+			[JSQSystemSoundPlayer jsq_playMessageSentSound];
+		}
+        else {
+            
+        }
+	}];
+    
+    JSQPhotoMediaItem *mediaItem = [[JSQPhotoMediaItem alloc] initWithImage:chosenImage ];
+    
+    Boolean isOutgoing = YES;
+    mediaItem.appliesMediaViewMaskAsOutgoing = isOutgoing;
+    
+    JSQMessage *message;
+    message = [[JSQMessage alloc] initWithSenderId:self.senderId senderDisplayName:self.senderId date:[NSDate date] media:mediaItem];
+    [self.messages addObject:message];
+    
+    [self finishSendingMessageAnimated:YES];   
+    
+}
+
+
+
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
 
 - (void)loadMessages {
     
-//    NSString* where = @"sender == 'michael' AND receiver == 'yuichi' OR sender == 'yuichi' AND receiver == 'michael'";
     NSString* whereFormat = @"sender == '%@' AND receiver == '%@' OR sender == '%@' AND receiver == '%@'";
     NSString* username = [PFUser currentUser][PF_USER_USERNAME];
     NSString* where = [[NSString alloc]initWithFormat:whereFormat, recipient,username,username,recipient];
@@ -78,14 +153,41 @@
                 for (PFObject *object in [objects reverseObjectEnumerator])
 				{
                     
+                    
+                    PFFile *filePicture = object[PF_MESSAGE_PHOTO];
+                    JSQMessage *message;
                     NSString* senderId = object[PF_MESSAGE_SENDER];
                     NSString* senderDisplayName = object[PF_MESSAGE_SENDER];
-                    NSString* text = object[PF_MESSAGE_TEXT];
-                
-                    // 新しいメッセージデータを追加する
-                    JSQMessage *message = [JSQMessage messageWithSenderId:senderId
-                                                  displayName:senderDisplayName
-                                                         text:text];
+                    
+                    if(filePicture == nil) {
+                        
+                        // text
+
+                        NSString* text = object[PF_MESSAGE_TEXT];
+                        message = [JSQMessage messageWithSenderId:senderId
+                                                      displayName:senderDisplayName
+                                                             text:text];
+                        // image
+                    }else {
+                        JSQPhotoMediaItem *mediaItem = [[JSQPhotoMediaItem alloc] initWithImage:nil];
+                            Boolean isOutgoing = [self.senderId isEqualToString:senderId];
+                            mediaItem.appliesMediaViewMaskAsOutgoing = isOutgoing;
+                        
+                            message = [[JSQMessage alloc] initWithSenderId:senderId senderDisplayName:senderDisplayName date:[NSDate date] media:mediaItem];
+                        //-----------------------------------------------------------------------------------------------------------------------------------------
+                            [filePicture getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error)
+                             {
+                                 if (error == nil)
+                                 {
+                                     mediaItem.image = [UIImage imageWithData:imageData];
+                                     [self.collectionView reloadData];
+                                 }
+                         }];
+                                    
+                    }
+                    
+                    
+                    
                     [self.messages addObject:message];
                     // メッセージの送信処理を完了する (画面上にメッセージが表示される)
                     [self finishSendingMessageAnimated:YES];
@@ -98,6 +200,8 @@
 		}];
     
 }
+
+
 
 - (void)viewDidAppear:(BOOL)animated
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -115,6 +219,7 @@
     [timer invalidate];
 }
 #pragma mark - JSQMessagesViewController
+
 
 // ⑤ Sendボタンが押下されたときに呼ばれる
 - (void)didPressSendButton:(UIButton *)button
@@ -189,30 +294,27 @@
     return self.messages.count;
 }
 
-#pragma mark - Auto Message
 
-// ⑥ 返信メッセージを受信する (自動)
-- (void)receiveAutoMessage
-{
-    // 1秒後にメッセージを受信する
-    [NSTimer scheduledTimerWithTimeInterval:1
-                                     target:self
-                                   selector:@selector(didFinishMessageTimer:)
-                                   userInfo:nil
-                                    repeats:NO];
+-(void)showActionSheet {
+    UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:@"Send Photo" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Gallery" otherButtonTitles:@"Take Photo", nil];
+    popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+    [popupQuery showInView:self.view];
 }
 
-- (void)didFinishMessageTimer:(NSTimer*)timer
-{
-    // 効果音を再生する
-    [JSQSystemSoundPlayer jsq_playMessageSentSound];
-    // 新しいメッセージデータを追加する
-    JSQMessage *message = [JSQMessage messageWithSenderId:@"user2"
-                                              displayName:@"underscore"
-                                                     text:@"Hello"];
-    [self.messages addObject:message];
-    // メッセージの受信処理を完了する (画面上にメッセージが表示される)
-    [self finishReceivingMessageAnimated:YES];
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    /**
+     * OR use the following switch statement
+     * Suggested by Colin =)
+     */
+     switch (buttonIndex) {
+     case 0:
+             [self selectPhoto];
+     break;
+     case 1:
+             [self takePhoto];
+     break;
+     }
 }
+
 
 @end
