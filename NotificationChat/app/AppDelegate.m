@@ -29,9 +29,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
-	[Parse setApplicationId:@"xBp25kiePJTYHs3EvMqo0e0eJhp7CbYKnKKmt0Xm" clientKey:@"sBmxHC1OUqU1gg4AbAOWCJiQrvTx9MKgPS6SgsJW"];
+	[Parse setApplicationId:@"tQF0B0q8onRust06RRrsxjAGnzGTXPCmB8ctwyj8" clientKey:@"tztIECS5r47UhoCz67jtafbkB4abFi0B1NWiVJCM"];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	[PFTwitterUtils initializeWithConsumerKey:@"kS83MvJltZwmfoWVoyE1R6xko" consumerSecret:@"YXSupp9hC2m1rugTfoSyqricST9214TwYapQErBcXlP1BrSfND"];
+//	[PFTwitterUtils initializeWithConsumerKey:@"kS83MvJltZwmfoWVoyE1R6xko" consumerSecret:@"YXSupp9hC2m1rugTfoSyqricST9214TwYapQErBcXlP1BrSfND"];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	[PFFacebookUtils initializeFacebook];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
@@ -53,12 +53,12 @@
 	self.settingsView = [[SettingsView alloc] init];
 
 	NavigationController *navController1 = [[NavigationController alloc] initWithRootViewController:self.recentView];
-	NavigationController *navController2 = [[NavigationController alloc] initWithRootViewController:self.groupsView];
+//	NavigationController *navController2 = [[NavigationController alloc] initWithRootViewController:self.groupsView];
 	NavigationController *navController3 = [[NavigationController alloc] initWithRootViewController:self.peopleView];
 	NavigationController *navController4 = [[NavigationController alloc] initWithRootViewController:self.settingsView];
 
 	self.tabBarController = [[UITabBarController alloc] init];
-	self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController1, navController2, navController3, navController4, nil];
+	self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController1, navController3, navController4, nil];
 	self.tabBarController.tabBar.translucent = NO;
 	self.tabBarController.selectedIndex = DEFAULT_TAB;
 
