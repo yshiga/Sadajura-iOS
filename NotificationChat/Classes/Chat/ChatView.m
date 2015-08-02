@@ -21,7 +21,6 @@
 #import "common.h"
 #import "image.h"
 #import "push.h"
-#import "recent.h"
 #import "video.h"
 
 #import "PhotoMediaItem.h"
@@ -101,7 +100,6 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	[super viewWillDisappear:animated];
-	ClearRecentCounter(recipient);
 	[timer invalidate];
 }
 

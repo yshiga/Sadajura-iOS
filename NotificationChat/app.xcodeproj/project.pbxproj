@@ -91,35 +91,15 @@
 		291A2C6D1B08EEC100E0E68C /* RecentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C0C1B08EEC100E0E68C /* RecentCell.xib */; };
 		291A2C6E1B08EEC100E0E68C /* RecentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C0E1B08EEC100E0E68C /* RecentView.m */; };
 		291A2C6F1B08EEC100E0E68C /* RecentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C0F1B08EEC100E0E68C /* RecentView.xib */; };
-		291A2C701B08EEC100E0E68C /* CreateGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C131B08EEC100E0E68C /* CreateGroupView.m */; };
-		291A2C711B08EEC100E0E68C /* CreateGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C141B08EEC100E0E68C /* CreateGroupView.xib */; };
-		291A2C721B08EEC100E0E68C /* GroupSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C171B08EEC100E0E68C /* GroupSettingsView.m */; };
-		291A2C731B08EEC100E0E68C /* GroupSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C181B08EEC100E0E68C /* GroupSettingsView.xib */; };
-		291A2C741B08EEC100E0E68C /* GroupsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C1A1B08EEC100E0E68C /* GroupsView.m */; };
-		291A2C751B08EEC100E0E68C /* GroupsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C1B1B08EEC100E0E68C /* GroupsView.xib */; };
-		291A2C761B08EEC100E0E68C /* PeopleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C1E1B08EEC100E0E68C /* PeopleView.m */; };
-		291A2C771B08EEC100E0E68C /* PeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C1F1B08EEC100E0E68C /* PeopleView.xib */; };
-		291A2C781B08EEC100E0E68C /* BlockedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C231B08EEC100E0E68C /* BlockedView.m */; };
-		291A2C791B08EEC100E0E68C /* BlockedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C241B08EEC100E0E68C /* BlockedView.xib */; };
 		291A2C7A1B08EEC100E0E68C /* PrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C271B08EEC100E0E68C /* PrivacyView.m */; };
 		291A2C7B1B08EEC100E0E68C /* PrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C281B08EEC100E0E68C /* PrivacyView.xib */; };
 		291A2C7C1B08EEC100E0E68C /* TermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C2B1B08EEC100E0E68C /* TermsView.m */; };
 		291A2C7D1B08EEC100E0E68C /* TermsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C2C1B08EEC100E0E68C /* TermsView.xib */; };
 		291A2C7E1B08EEC100E0E68C /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C2E1B08EEC100E0E68C /* SettingsView.m */; };
 		291A2C7F1B08EEC100E0E68C /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C2F1B08EEC100E0E68C /* SettingsView.xib */; };
-		291A2C801B08EEC100E0E68C /* SelectSingleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C331B08EEC100E0E68C /* SelectSingleView.m */; };
-		291A2C811B08EEC100E0E68C /* SelectSingleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C341B08EEC100E0E68C /* SelectSingleView.xib */; };
-		291A2C821B08EEC100E0E68C /* SelectMultipleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C371B08EEC100E0E68C /* SelectMultipleView.m */; };
-		291A2C831B08EEC100E0E68C /* SelectMultipleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C381B08EEC100E0E68C /* SelectMultipleView.xib */; };
-		291A2C841B08EEC100E0E68C /* AddressBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C3B1B08EEC100E0E68C /* AddressBookView.m */; };
-		291A2C851B08EEC100E0E68C /* AddressBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C3C1B08EEC100E0E68C /* AddressBookView.xib */; };
-		291A2C861B08EEC100E0E68C /* FacebookFriendsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C3F1B08EEC100E0E68C /* FacebookFriendsView.m */; };
-		291A2C871B08EEC100E0E68C /* FacebookFriendsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2C401B08EEC100E0E68C /* FacebookFriendsView.xib */; };
-		291A2C881B08EEC100E0E68C /* group.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C441B08EEC100E0E68C /* group.m */; };
 		291A2C891B08EEC100E0E68C /* people.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C461B08EEC100E0E68C /* people.m */; };
 		291A2C8A1B08EEC100E0E68C /* PFUser+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C481B08EEC100E0E68C /* PFUser+Util.m */; };
 		291A2C8B1B08EEC100E0E68C /* push.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C4A1B08EEC100E0E68C /* push.m */; };
-		291A2C8C1B08EEC100E0E68C /* recent.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C4C1B08EEC100E0E68C /* recent.m */; };
 		291A2C8D1B08EEC100E0E68C /* camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C4F1B08EEC100E0E68C /* camera.m */; };
 		291A2C8E1B08EEC100E0E68C /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C511B08EEC100E0E68C /* common.m */; };
 		291A2C8F1B08EEC100E0E68C /* converter.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C531B08EEC100E0E68C /* converter.m */; };
@@ -344,21 +324,6 @@
 		291A2C0D1B08EEC100E0E68C /* RecentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentView.h; sourceTree = "<group>"; };
 		291A2C0E1B08EEC100E0E68C /* RecentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentView.m; sourceTree = "<group>"; };
 		291A2C0F1B08EEC100E0E68C /* RecentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentView.xib; sourceTree = "<group>"; };
-		291A2C121B08EEC100E0E68C /* CreateGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupView.h; sourceTree = "<group>"; };
-		291A2C131B08EEC100E0E68C /* CreateGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupView.m; sourceTree = "<group>"; };
-		291A2C141B08EEC100E0E68C /* CreateGroupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateGroupView.xib; sourceTree = "<group>"; };
-		291A2C161B08EEC100E0E68C /* GroupSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSettingsView.h; sourceTree = "<group>"; };
-		291A2C171B08EEC100E0E68C /* GroupSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSettingsView.m; sourceTree = "<group>"; };
-		291A2C181B08EEC100E0E68C /* GroupSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupSettingsView.xib; sourceTree = "<group>"; };
-		291A2C191B08EEC100E0E68C /* GroupsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsView.h; sourceTree = "<group>"; };
-		291A2C1A1B08EEC100E0E68C /* GroupsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsView.m; sourceTree = "<group>"; };
-		291A2C1B1B08EEC100E0E68C /* GroupsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsView.xib; sourceTree = "<group>"; };
-		291A2C1D1B08EEC100E0E68C /* PeopleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleView.h; sourceTree = "<group>"; };
-		291A2C1E1B08EEC100E0E68C /* PeopleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleView.m; sourceTree = "<group>"; };
-		291A2C1F1B08EEC100E0E68C /* PeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeopleView.xib; sourceTree = "<group>"; };
-		291A2C221B08EEC100E0E68C /* BlockedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockedView.h; sourceTree = "<group>"; };
-		291A2C231B08EEC100E0E68C /* BlockedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockedView.m; sourceTree = "<group>"; };
-		291A2C241B08EEC100E0E68C /* BlockedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlockedView.xib; sourceTree = "<group>"; };
 		291A2C261B08EEC100E0E68C /* PrivacyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyView.h; sourceTree = "<group>"; };
 		291A2C271B08EEC100E0E68C /* PrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyView.m; sourceTree = "<group>"; };
 		291A2C281B08EEC100E0E68C /* PrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyView.xib; sourceTree = "<group>"; };
@@ -368,28 +333,12 @@
 		291A2C2D1B08EEC100E0E68C /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
 		291A2C2E1B08EEC100E0E68C /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
 		291A2C2F1B08EEC100E0E68C /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
-		291A2C321B08EEC100E0E68C /* SelectSingleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSingleView.h; sourceTree = "<group>"; };
-		291A2C331B08EEC100E0E68C /* SelectSingleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectSingleView.m; sourceTree = "<group>"; };
-		291A2C341B08EEC100E0E68C /* SelectSingleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectSingleView.xib; sourceTree = "<group>"; };
-		291A2C361B08EEC100E0E68C /* SelectMultipleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectMultipleView.h; sourceTree = "<group>"; };
-		291A2C371B08EEC100E0E68C /* SelectMultipleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectMultipleView.m; sourceTree = "<group>"; };
-		291A2C381B08EEC100E0E68C /* SelectMultipleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectMultipleView.xib; sourceTree = "<group>"; };
-		291A2C3A1B08EEC100E0E68C /* AddressBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookView.h; sourceTree = "<group>"; };
-		291A2C3B1B08EEC100E0E68C /* AddressBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookView.m; sourceTree = "<group>"; };
-		291A2C3C1B08EEC100E0E68C /* AddressBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressBookView.xib; sourceTree = "<group>"; };
-		291A2C3E1B08EEC100E0E68C /* FacebookFriendsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookFriendsView.h; sourceTree = "<group>"; };
-		291A2C3F1B08EEC100E0E68C /* FacebookFriendsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookFriendsView.m; sourceTree = "<group>"; };
-		291A2C401B08EEC100E0E68C /* FacebookFriendsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacebookFriendsView.xib; sourceTree = "<group>"; };
-		291A2C431B08EEC100E0E68C /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
-		291A2C441B08EEC100E0E68C /* group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = group.m; sourceTree = "<group>"; };
 		291A2C451B08EEC100E0E68C /* people.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = people.h; sourceTree = "<group>"; };
 		291A2C461B08EEC100E0E68C /* people.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = people.m; sourceTree = "<group>"; };
 		291A2C471B08EEC100E0E68C /* PFUser+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFUser+Util.h"; sourceTree = "<group>"; };
 		291A2C481B08EEC100E0E68C /* PFUser+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFUser+Util.m"; sourceTree = "<group>"; };
 		291A2C491B08EEC100E0E68C /* push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = push.h; sourceTree = "<group>"; };
 		291A2C4A1B08EEC100E0E68C /* push.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = push.m; sourceTree = "<group>"; };
-		291A2C4B1B08EEC100E0E68C /* recent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recent.h; sourceTree = "<group>"; };
-		291A2C4C1B08EEC100E0E68C /* recent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recent.m; sourceTree = "<group>"; };
 		291A2C4E1B08EEC100E0E68C /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 		291A2C4F1B08EEC100E0E68C /* camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = camera.m; sourceTree = "<group>"; };
 		291A2C501B08EEC100E0E68C /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
@@ -853,8 +802,6 @@
 			isa = PBXGroup;
 			children = (
 				291A2C091B08EEC100E0E68C /* 01_Recent */,
-				291A2C101B08EEC100E0E68C /* 02_Groups */,
-				291A2C1C1B08EEC100E0E68C /* 03_People */,
 				291A2C201B08EEC100E0E68C /* 04_Settings */,
 			);
 			path = Tabs;
@@ -873,52 +820,9 @@
 			path = 01_Recent;
 			sourceTree = "<group>";
 		};
-		291A2C101B08EEC100E0E68C /* 02_Groups */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C111B08EEC100E0E68C /* 01_CreateGroup */,
-				291A2C151B08EEC100E0E68C /* 02_GroupSettings */,
-				291A2C191B08EEC100E0E68C /* GroupsView.h */,
-				291A2C1A1B08EEC100E0E68C /* GroupsView.m */,
-				291A2C1B1B08EEC100E0E68C /* GroupsView.xib */,
-			);
-			path = 02_Groups;
-			sourceTree = "<group>";
-		};
-		291A2C111B08EEC100E0E68C /* 01_CreateGroup */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C121B08EEC100E0E68C /* CreateGroupView.h */,
-				291A2C131B08EEC100E0E68C /* CreateGroupView.m */,
-				291A2C141B08EEC100E0E68C /* CreateGroupView.xib */,
-			);
-			path = 01_CreateGroup;
-			sourceTree = "<group>";
-		};
-		291A2C151B08EEC100E0E68C /* 02_GroupSettings */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C161B08EEC100E0E68C /* GroupSettingsView.h */,
-				291A2C171B08EEC100E0E68C /* GroupSettingsView.m */,
-				291A2C181B08EEC100E0E68C /* GroupSettingsView.xib */,
-			);
-			path = 02_GroupSettings;
-			sourceTree = "<group>";
-		};
-		291A2C1C1B08EEC100E0E68C /* 03_People */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C1D1B08EEC100E0E68C /* PeopleView.h */,
-				291A2C1E1B08EEC100E0E68C /* PeopleView.m */,
-				291A2C1F1B08EEC100E0E68C /* PeopleView.xib */,
-			);
-			path = 03_People;
-			sourceTree = "<group>";
-		};
 		291A2C201B08EEC100E0E68C /* 04_Settings */ = {
 			isa = PBXGroup;
 			children = (
-				291A2C211B08EEC100E0E68C /* 01_Blocked */,
 				291A2C251B08EEC100E0E68C /* 02_Privacy */,
 				291A2C291B08EEC100E0E68C /* 03_Terms */,
 				291A2C2D1B08EEC100E0E68C /* SettingsView.h */,
@@ -926,16 +830,6 @@
 				291A2C2F1B08EEC100E0E68C /* SettingsView.xib */,
 			);
 			path = 04_Settings;
-			sourceTree = "<group>";
-		};
-		291A2C211B08EEC100E0E68C /* 01_Blocked */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C221B08EEC100E0E68C /* BlockedView.h */,
-				291A2C231B08EEC100E0E68C /* BlockedView.m */,
-				291A2C241B08EEC100E0E68C /* BlockedView.xib */,
-			);
-			path = 01_Blocked;
 			sourceTree = "<group>";
 		};
 		291A2C251B08EEC100E0E68C /* 02_Privacy */ = {
@@ -961,52 +855,8 @@
 		291A2C301B08EEC100E0E68C /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				291A2C311B08EEC100E0E68C /* 01_SelectSingle */,
-				291A2C351B08EEC100E0E68C /* 02_SelectMultiple */,
-				291A2C391B08EEC100E0E68C /* 03_AddressBook */,
-				291A2C3D1B08EEC100E0E68C /* 04_FacebookFriends */,
 			);
 			path = Users;
-			sourceTree = "<group>";
-		};
-		291A2C311B08EEC100E0E68C /* 01_SelectSingle */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C321B08EEC100E0E68C /* SelectSingleView.h */,
-				291A2C331B08EEC100E0E68C /* SelectSingleView.m */,
-				291A2C341B08EEC100E0E68C /* SelectSingleView.xib */,
-			);
-			path = 01_SelectSingle;
-			sourceTree = "<group>";
-		};
-		291A2C351B08EEC100E0E68C /* 02_SelectMultiple */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C361B08EEC100E0E68C /* SelectMultipleView.h */,
-				291A2C371B08EEC100E0E68C /* SelectMultipleView.m */,
-				291A2C381B08EEC100E0E68C /* SelectMultipleView.xib */,
-			);
-			path = 02_SelectMultiple;
-			sourceTree = "<group>";
-		};
-		291A2C391B08EEC100E0E68C /* 03_AddressBook */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C3A1B08EEC100E0E68C /* AddressBookView.h */,
-				291A2C3B1B08EEC100E0E68C /* AddressBookView.m */,
-				291A2C3C1B08EEC100E0E68C /* AddressBookView.xib */,
-			);
-			path = 03_AddressBook;
-			sourceTree = "<group>";
-		};
-		291A2C3D1B08EEC100E0E68C /* 04_FacebookFriends */ = {
-			isa = PBXGroup;
-			children = (
-				291A2C3E1B08EEC100E0E68C /* FacebookFriendsView.h */,
-				291A2C3F1B08EEC100E0E68C /* FacebookFriendsView.m */,
-				291A2C401B08EEC100E0E68C /* FacebookFriendsView.xib */,
-			);
-			path = 04_FacebookFriends;
 			sourceTree = "<group>";
 		};
 		291A2C411B08EEC100E0E68C /* Utilities */ = {
@@ -1021,16 +871,12 @@
 		291A2C421B08EEC100E0E68C /* backend */ = {
 			isa = PBXGroup;
 			children = (
-				291A2C431B08EEC100E0E68C /* group.h */,
-				291A2C441B08EEC100E0E68C /* group.m */,
 				291A2C451B08EEC100E0E68C /* people.h */,
 				291A2C461B08EEC100E0E68C /* people.m */,
 				291A2C471B08EEC100E0E68C /* PFUser+Util.h */,
 				291A2C481B08EEC100E0E68C /* PFUser+Util.m */,
 				291A2C491B08EEC100E0E68C /* push.h */,
 				291A2C4A1B08EEC100E0E68C /* push.m */,
-				291A2C4B1B08EEC100E0E68C /* recent.h */,
-				291A2C4C1B08EEC100E0E68C /* recent.m */,
 			);
 			path = backend;
 			sourceTree = "<group>";
@@ -1286,14 +1132,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				291A2C7D1B08EEC100E0E68C /* TermsView.xib in Resources */,
-				291A2C711B08EEC100E0E68C /* CreateGroupView.xib in Resources */,
 				291A2B9C1B08ED2E00E0E68C /* JSQMessagesAssets.bundle in Resources */,
 				291A2BC41B08ED2E00E0E68C /* JSQMessagesToolbarContentView.xib in Resources */,
 				291A2C7B1B08EEC100E0E68C /* PrivacyView.xib in Resources */,
 				29A5A4C61B2DA72900EE7928 /* recent_blank@2x.png in Resources */,
 				29A5A4C11B2DA72900EE7928 /* premium07@2x.png in Resources */,
 				291A2BA61B08ED2E00E0E68C /* JSQMessagesViewController.xib in Resources */,
-				291A2C851B08EEC100E0E68C /* AddressBookView.xib in Resources */,
 				29A5A4B51B2DA72900EE7928 /* chat_blank@2x.png in Resources */,
 				291A2BBC1B08ED2E00E0E68C /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
 				29A5A4CC1B2DA72900EE7928 /* tab_settings@2x.png in Resources */,
@@ -1306,18 +1150,13 @@
 				291A2C6B1B08EEC100E0E68C /* PremiumView.xib in Resources */,
 				291A2C941B08EEC100E0E68C /* LoginView.xib in Resources */,
 				29A5A4C51B2DA72900EE7928 /* premium11@2x.png in Resources */,
-				291A2C831B08EEC100E0E68C /* SelectMultipleView.xib in Resources */,
 				29A5A4B61B2DA72900EE7928 /* chat_camera@2x.png in Resources */,
 				29A5A4B91B2DA72900EE7928 /* chat_stickers@2x.png in Resources */,
 				29A5A4B81B2DA72900EE7928 /* chat_pictures@2x.png in Resources */,
 				29A5A4BC1B2DA72900EE7928 /* premium02@2x.png in Resources */,
 				29A5A4BA1B2DA72900EE7928 /* chat_videos@2x.png in Resources */,
-				291A2C771B08EEC100E0E68C /* PeopleView.xib in Resources */,
 				29A5A4B71B2DA72900EE7928 /* chat_location@2x.png in Resources */,
 				29EB241919E9292500D7AA97 /* LaunchScreen.xib in Resources */,
-				291A2C871B08EEC100E0E68C /* FacebookFriendsView.xib in Resources */,
-				291A2C731B08EEC100E0E68C /* GroupSettingsView.xib in Resources */,
-				291A2C811B08EEC100E0E68C /* SelectSingleView.xib in Resources */,
 				291A2C6F1B08EEC100E0E68C /* RecentView.xib in Resources */,
 				291A2BBA1B08ED2E00E0E68C /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				291A2BF21B08ED4800E0E68C /* privacy.html in Resources */,
@@ -1327,7 +1166,6 @@
 				291A2C661B08EEC100E0E68C /* ProfileView.xib in Resources */,
 				291A2BC11B08ED2E00E0E68C /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				291A2C961B08EEC100E0E68C /* RegisterView.xib in Resources */,
-				291A2C791B08EEC100E0E68C /* BlockedView.xib in Resources */,
 				29A5A4C31B2DA72900EE7928 /* premium09@2x.png in Resources */,
 				291A2C7F1B08EEC100E0E68C /* SettingsView.xib in Resources */,
 				29A5A4C21B2DA72900EE7928 /* premium08@2x.png in Resources */,
@@ -1339,7 +1177,6 @@
 				291A2BC91B08ED2E00E0E68C /* ProgressHUD.bundle in Resources */,
 				29A5A4BB1B2DA72900EE7928 /* premium01@2x.png in Resources */,
 				291A2C6D1B08EEC100E0E68C /* RecentCell.xib in Resources */,
-				291A2C751B08EEC100E0E68C /* GroupsView.xib in Resources */,
 				29A5A4BD1B2DA72900EE7928 /* premium03@2x.png in Resources */,
 				29A5A4C41B2DA72900EE7928 /* premium10@2x.png in Resources */,
 			);
@@ -1364,7 +1201,6 @@
 				291A2BBD1B08ED2E00E0E68C /* JSQMessagesComposerTextView.m in Sources */,
 				291A2BA11B08ED2E00E0E68C /* UIDevice+JSQMessages.m in Sources */,
 				291A2B8F1B08ED2E00E0E68C /* AFNetworkActivityIndicatorManager.m in Sources */,
-				291A2C721B08EEC100E0E68C /* GroupSettingsView.m in Sources */,
 				291A2BBE1B08ED2E00E0E68C /* JSQMessagesInputToolbar.m in Sources */,
 				291A2BC81B08ED2E00E0E68C /* JSQSystemSoundPlayer.m in Sources */,
 				291A2B8E1B08ED2E00E0E68C /* AFURLSessionManager.m in Sources */,
@@ -1377,7 +1213,6 @@
 				291A2C671B08EEC100E0E68C /* ChatView.m in Sources */,
 				291A2B8C1B08ED2E00E0E68C /* AFURLRequestSerialization.m in Sources */,
 				291A2C8A1B08EEC100E0E68C /* PFUser+Util.m in Sources */,
-				291A2C781B08EEC100E0E68C /* BlockedView.m in Sources */,
 				291A2C8E1B08EEC100E0E68C /* common.m in Sources */,
 				291A2C8F1B08EEC100E0E68C /* converter.m in Sources */,
 				291A2C7A1B08EEC100E0E68C /* PrivacyView.m in Sources */,
@@ -1385,7 +1220,6 @@
 				291A2BC01B08ED2E00E0E68C /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
 				291A2C8D1B08EEC100E0E68C /* camera.m in Sources */,
 				291A2C681B08EEC100E0E68C /* PhotoMediaItem.m in Sources */,
-				291A2C841B08EEC100E0E68C /* AddressBookView.m in Sources */,
 				291A2B951B08ED2E00E0E68C /* UIRefreshControl+AFNetworking.m in Sources */,
 				291A2BB41B08ED2E00E0E68C /* JSQPhotoMediaItem.m in Sources */,
 				291A2BA01B08ED2E00E0E68C /* UIColor+JSQMessages.m in Sources */,
@@ -1401,10 +1235,8 @@
 				291A2B911B08ED2E00E0E68C /* UIAlertView+AFNetworking.m in Sources */,
 				291A2B9B1B08ED2E00E0E68C /* IDMZoomingScrollView.m in Sources */,
 				291A2BA81B08ED2E00E0E68C /* JSQMessagesBubbleImageFactory.m in Sources */,
-				291A2C8C1B08EEC100E0E68C /* recent.m in Sources */,
 				291A2BA41B08ED2E00E0E68C /* JSQMessagesKeyboardController.m in Sources */,
 				291A2BB91B08ED2E00E0E68C /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
-				291A2C701B08EEC100E0E68C /* CreateGroupView.m in Sources */,
 				291A2BB21B08ED2E00E0E68C /* JSQMessagesAvatarImage.m in Sources */,
 				291A2C931B08EEC100E0E68C /* LoginView.m in Sources */,
 				291A2C6A1B08EEC100E0E68C /* PremiumView.m in Sources */,
@@ -1415,18 +1247,14 @@
 				291A2BAE1B08ED2E00E0E68C /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				291A2C8B1B08EEC100E0E68C /* push.m in Sources */,
 				291A2C901B08EEC100E0E68C /* fileutil.m in Sources */,
-				291A2C861B08EEC100E0E68C /* FacebookFriendsView.m in Sources */,
 				291A2BAD1B08ED2E00E0E68C /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
 				291A2BBF1B08ED2E00E0E68C /* JSQMessagesLabel.m in Sources */,
 				291A2BA91B08ED2E00E0E68C /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
 				291A2B8B1B08ED2E00E0E68C /* AFURLConnectionOperation.m in Sources */,
-				291A2C741B08EEC100E0E68C /* GroupsView.m in Sources */,
 				291A2BAC1B08ED2E00E0E68C /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				291A2BB11B08ED2E00E0E68C /* JSQMessage.m in Sources */,
-				291A2C761B08EEC100E0E68C /* PeopleView.m in Sources */,
 				291A2BA71B08ED2E00E0E68C /* JSQMessagesAvatarImageFactory.m in Sources */,
 				291A2BB31B08ED2E00E0E68C /* JSQMessagesBubbleImage.m in Sources */,
-				291A2C881B08EEC100E0E68C /* group.m in Sources */,
 				291A2BA31B08ED2E00E0E68C /* UIView+JSQMessages.m in Sources */,
 				29EB240B19E9292500D7AA97 /* main.m in Sources */,
 				291A2C651B08EEC100E0E68C /* ProfileView.m in Sources */,
@@ -1442,9 +1270,7 @@
 				291A2B8A1B08ED2E00E0E68C /* AFSecurityPolicy.m in Sources */,
 				291A2B9F1B08ED2E00E0E68C /* NSString+JSQMessages.m in Sources */,
 				291A2BB71B08ED2E00E0E68C /* JSQMessagesCollectionView.m in Sources */,
-				291A2C801B08EEC100E0E68C /* SelectSingleView.m in Sources */,
 				291A2B981B08ED2E00E0E68C /* IDMPhotoBrowser.m in Sources */,
-				291A2C821B08EEC100E0E68C /* SelectMultipleView.m in Sources */,
 				291A2BC51B08ED2E00E0E68C /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				291A2BB61B08ED2E00E0E68C /* JSQMessagesCellTextView.m in Sources */,
 				291A2BC31B08ED2E00E0E68C /* JSQMessagesToolbarContentView.m in Sources */,

@@ -20,7 +20,6 @@
 #import "push.h"
 
 #import "SettingsView.h"
-#import "BlockedView.h"
 #import "PrivacyView.h"
 #import "TermsView.h"
 #import "NavigationController.h"
@@ -100,16 +99,6 @@
 }
 
 #pragma mark - User actions
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-- (void)actionBlocked
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-{
-	BlockedView *blockedView = [[BlockedView alloc] init];
-	blockedView.hidesBottomBarWhenPushed = YES;
-	[self.navigationController pushViewController:blockedView animated:YES];
-}
-
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 - (void)actionPrivacy
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -241,9 +230,8 @@
 {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	if ((indexPath.section == 0) && (indexPath.row == 0)) [self actionBlocked];
-	if ((indexPath.section == 0) && (indexPath.row == 1)) [self actionPrivacy];
-	if ((indexPath.section == 0) && (indexPath.row == 2)) [self actionTerms];
+	if ((indexPath.section == 0) && (indexPath.row == 0)) [self actionPrivacy];
+	if ((indexPath.section == 0) && (indexPath.row == 1)) [self actionTerms];
 	if ((indexPath.section == 1) && (indexPath.row == 0)) [self actionLogout];
 }
 

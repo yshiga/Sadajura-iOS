@@ -11,13 +11,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "SelectSingleView.h"
-#import "SelectMultipleView.h"
-#import "AddressBookView.h"
-#import "FacebookFriendsView.h"
-
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-@interface RecentView : UITableViewController <UIActionSheetDelegate, SelectSingleDelegate, SelectMultipleDelegate, AddressBookDelegate, FacebookFriendsDelegate>
+@interface RecentView : UITableViewController <UIActionSheetDelegate>
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 
 - (void)loadRecents;

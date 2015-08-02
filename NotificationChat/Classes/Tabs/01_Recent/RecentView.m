@@ -14,15 +14,10 @@
 
 #import "AppConstant.h"
 #import "common.h"
-#import "recent.h"
 
 #import "RecentView.h"
 #import "RecentCell.h"
 #import "ChatView.h"
-#import "SelectSingleView.h"
-#import "SelectMultipleView.h"
-#import "AddressBookView.h"
-#import "FacebookFriendsView.h"
 #import "NavigationController.h"
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -56,8 +51,7 @@
 	[super viewDidLoad];
 	self.title = @"Recent";
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self
-																						   action:@selector(actionCompose)];
+
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	[self.tableView registerNib:[UINib nibWithNibName:@"RecentCell" bundle:nil] forCellReuseIdentifier:@"RecentCell"];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
@@ -142,56 +136,7 @@
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-- (void)actionCompose
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-{
-//	UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil
-//			   otherButtonTitles:@"Single recipient", @"Multiple recipients", @"Address Book", @"Facebook Friends", nil];
-//	[action showFromTabBar:[[self tabBarController] tabBar]];
-    			SelectSingleView *selectSingleView = [[SelectSingleView alloc] init];
-    selectSingleView.delegate = self;
-    NavigationController *navController = [[NavigationController alloc] initWithRootViewController:selectSingleView];
-    [self presentViewController:navController animated:YES completion:nil];
-}
 
-#pragma mark - UIActionSheetDelegate
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-{
-	if (buttonIndex != actionSheet.cancelButtonIndex)
-	{
-		if (buttonIndex == 0)
-		{
-			SelectSingleView *selectSingleView = [[SelectSingleView alloc] init];
-			selectSingleView.delegate = self;
-			NavigationController *navController = [[NavigationController alloc] initWithRootViewController:selectSingleView];
-			[self presentViewController:navController animated:YES completion:nil];
-		}
-		if (buttonIndex == 1)
-		{
-			SelectMultipleView *selectMultipleView = [[SelectMultipleView alloc] init];
-			selectMultipleView.delegate = self;
-			NavigationController *navController = [[NavigationController alloc] initWithRootViewController:selectMultipleView];
-			[self presentViewController:navController animated:YES completion:nil];
-		}
-		if (buttonIndex == 2)
-		{
-			AddressBookView *addressBookView = [[AddressBookView alloc] init];
-			addressBookView.delegate = self;
-			NavigationController *navController = [[NavigationController alloc] initWithRootViewController:addressBookView];
-			[self presentViewController:navController animated:YES completion:nil];
-		}
-		if (buttonIndex == 3)
-		{
-			FacebookFriendsView *facebookFriendsView = [[FacebookFriendsView alloc] init];
-			facebookFriendsView.delegate = self;
-			NavigationController *navController = [[NavigationController alloc] initWithRootViewController:facebookFriendsView];
-			[self presentViewController:navController animated:YES completion:nil];
-		}
-	}
-}
 
 #pragma mark - SelectSingleDelegate
 
@@ -200,41 +145,12 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	PFUser *user1 = [PFUser currentUser];
-	NSString *groupId = StartPrivateChat(user1, user2);
-	[self actionChat:groupId];
+	[self actionChat:user2.objectId];
 }
 
 #pragma mark - SelectMultipleDelegate
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-- (void)didSelectMultipleUsers:(NSMutableArray *)users
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-{
-	NSString *groupId = StartMultipleChat(users);
-	[self actionChat:groupId];
-}
-
-#pragma mark - AddressBookDelegate
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-- (void)didSelectAddressBookUser:(PFUser *)user2
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-{
-	PFUser *user1 = [PFUser currentUser];
-	NSString *groupId = StartPrivateChat(user1, user2);
-	[self actionChat:groupId];
-}
-
-#pragma mark - FacebookFriendsDelegate
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-- (void)didSelectFacebookUser:(PFUser *)user2
-//-------------------------------------------------------------------------------------------------------------------------------------------------
-{
-	PFUser *user1 = [PFUser currentUser];
-	NSString *groupId = StartPrivateChat(user1, user2);
-	[self actionChat:groupId];
-}
 
 #pragma mark - Table view data source
 

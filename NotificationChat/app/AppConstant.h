@@ -56,10 +56,7 @@
 #define		PF_BLOCKED_USER2					@"user2"				//	Pointer to User Class
 #define		PF_BLOCKED_USERID2					@"userId2"				//	String
 //-----------------------------------------------------------------------
-#define		PF_GROUP_CLASS_NAME					@"Group"				//	Class name
-#define		PF_GROUP_USER						@"user"					//	Pointer to User Class
-#define		PF_GROUP_NAME						@"name"					//	String
-#define		PF_GROUP_MEMBERS					@"members"				//	Array
+
 //-----------------------------------------------------------------------
 #define		PF_MESSAGE_CLASS_NAME				@"Message"				//	Class name
 #define		PF_MESSAGE_USER						@"user"					//	Pointer to User Class
