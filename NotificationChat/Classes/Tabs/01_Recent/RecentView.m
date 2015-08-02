@@ -83,7 +83,7 @@
     
 	PFQuery *query = [PFQuery queryWithClassName:PF_USER_CLASS_NAME];
 //	PFQuery *query = [PFQuery queryWithClassName:PF_RECENT_CLASS_NAME];
-//	[query whereKey:PF_RECENT_USER equalTo:[PFUser currentUser]];
+    [query whereKey:PF_USER_OBJECTID notEqualTo:[PFUser currentUser].objectId];
 //	[query includeKey:PF_RECENT_LASTUSER];
 //	[query orderByDescending:PF_RECENT_UPDATEDACTION];
 	[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
@@ -141,12 +141,14 @@
 #pragma mark - SelectSingleDelegate
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
+/*
 - (void)didSelectSingleUser:(PFUser *)user2
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	PFUser *user1 = [PFUser currentUser];
 	[self actionChat:user2.objectId];
 }
+ */
 
 #pragma mark - SelectMultipleDelegate
 
@@ -208,8 +210,8 @@
 {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	PFObject *recent = recents[indexPath.row];
-	[self actionChat:recent[PF_RECENT_GROUPID]];
+	PFObject *user = recents[indexPath.row];
+	[self actionChat:user.objectId];
 }
 
 @end
