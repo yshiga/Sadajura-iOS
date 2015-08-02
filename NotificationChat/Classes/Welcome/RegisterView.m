@@ -74,7 +74,7 @@
 	NSString *password	= fieldPassword.text;
 	NSString *email		= [fieldEmail.text lowercaseString];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	if ([name length] < 8)		{ [ProgressHUD showError:@"Name is too short."]; return; }
+	if ([name length] == 0)		{ [ProgressHUD showError:@"Name must be set."]; return; }
 	if ([password length] == 0)	{ [ProgressHUD showError:@"Password must be set."]; return; }
 	if ([email length] == 0)	{ [ProgressHUD showError:@"Email must be set."]; return; }
 	//---------------------------------------------------------------------------------------------------------------------------------------------
