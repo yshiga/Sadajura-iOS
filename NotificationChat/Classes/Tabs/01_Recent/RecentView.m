@@ -36,8 +36,8 @@
 {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	{
-		[self.tabBarItem setImage:[UIImage imageNamed:@"tab_recent"]];
-		self.tabBarItem.title = @"Recent";
+		[self.tabBarItem setImage:[UIImage imageNamed:@"tab_groups"]];
+		self.tabBarItem.title = @"message";
 		//-----------------------------------------------------------------------------------------------------------------------------------------
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(actionCleanup) name:NOTIFICATION_USER_LOGGED_OUT object:nil];
 	}
@@ -49,7 +49,7 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	[super viewDidLoad];
-	self.title = @"Recent";
+	self.title = @"Message";
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 
 	//---------------------------------------------------------------------------------------------------------------------------------------------

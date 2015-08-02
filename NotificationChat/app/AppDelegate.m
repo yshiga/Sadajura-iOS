@@ -56,14 +56,15 @@
 //	self.groupsView = [[GroupsView alloc] init];
 //	self.peopleView = [[PeopleView alloc] init];
 //	self.peopleView = [[SelectSingleView alloc] init];
+    self.wishlistView = [[WishlistView alloc] init];
 	self.settingsView = [[SettingsView alloc] init];
 
 	NavigationController *navController1 = [[NavigationController alloc] initWithRootViewController:self.recentView];
-//	NavigationController *navController3 = [[NavigationController alloc] initWithRootViewController:self.peopleView];
+	NavigationController *navController3 = [[NavigationController alloc] initWithRootViewController:self.wishlistView];
 	NavigationController *navController4 = [[NavigationController alloc] initWithRootViewController:self.settingsView];
 
 	self.tabBarController = [[UITabBarController alloc] init];
-	self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController1, navController4, nil];
+	self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController1,navController3,navController4, nil];
 	self.tabBarController.tabBar.translucent = NO;
 	self.tabBarController.selectedIndex = DEFAULT_TAB;
 

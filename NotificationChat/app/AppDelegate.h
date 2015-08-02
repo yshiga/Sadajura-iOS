@@ -14,6 +14,7 @@
 #import "RecentView.h"
 #import "SettingsView.h"
 #import "MyChatView.h"
+#import "WishlistView.h"
 @import CoreLocation;
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -24,6 +25,7 @@
 @property (strong, nonatomic) UITabBarController *tabBarController;
 
 @property (strong, nonatomic) RecentView *recentView;
+@property (strong, nonatomic) WishlistView *wishlistView;
 @property (strong, nonatomic) SettingsView *settingsView;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;

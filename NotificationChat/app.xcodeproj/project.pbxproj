@@ -157,6 +157,7 @@
 		29EB241619E9292500D7AA97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EB241519E9292500D7AA97 /* Images.xcassets */; };
 		29EB241919E9292500D7AA97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29EB241719E9292500D7AA97 /* LaunchScreen.xib */; };
 		66C188631B6DE536003188A3 /* MyChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C188621B6DE536003188A3 /* MyChatView.m */; };
+		66C188681B6E812C003188A3 /* WishlistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C188671B6E812C003188A3 /* WishlistView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -409,6 +410,8 @@
 		29EB254F19E92ACD00D7AA97 /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		66C188621B6DE536003188A3 /* MyChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChatView.m; sourceTree = "<group>"; };
 		66C188641B6DE548003188A3 /* MyChatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyChatView.h; sourceTree = "<group>"; };
+		66C188661B6E8116003188A3 /* WishlistView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WishlistView.h; sourceTree = "<group>"; };
+		66C188671B6E812C003188A3 /* WishlistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishlistView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -736,6 +739,7 @@
 		291A2BF41B08EEC100E0E68C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66C188651B6E8092003188A3 /* Wishlist */,
 				66C188611B6DE512003188A3 /* MyChat */,
 				291A2BF51B08EEC100E0E68C /* Application */,
 				291A2BF81B08EEC100E0E68C /* Chat */,
@@ -1069,6 +1073,15 @@
 			name = MyChat;
 			sourceTree = "<group>";
 		};
+		66C188651B6E8092003188A3 /* Wishlist */ = {
+			isa = PBXGroup;
+			children = (
+				66C188661B6E8116003188A3 /* WishlistView.h */,
+				66C188671B6E812C003188A3 /* WishlistView.m */,
+			);
+			name = Wishlist;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1233,6 +1246,7 @@
 				291A2B931B08ED2E00E0E68C /* UIImageView+AFNetworking.m in Sources */,
 				291A2BAB1B08ED2E00E0E68C /* JSQMessagesToolbarButtonFactory.m in Sources */,
 				291A2C6C1B08EEC100E0E68C /* RecentCell.m in Sources */,
+				66C188681B6E812C003188A3 /* WishlistView.m in Sources */,
 				291A2BBB1B08ED2E00E0E68C /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
 				291A2C951B08EEC100E0E68C /* RegisterView.m in Sources */,
 				29EB240E19E9292500D7AA97 /* AppDelegate.m in Sources */,
