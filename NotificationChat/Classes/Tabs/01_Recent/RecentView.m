@@ -17,7 +17,7 @@
 
 #import "RecentView.h"
 #import "RecentCell.h"
-#import "ChatView.h"
+#import "MyChatView.h"
 #import "NavigationController.h"
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -121,7 +121,7 @@
 - (void)actionChat:(NSString *)groupId
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
-	ChatView *chatView = [[ChatView alloc] initWith:groupId];
+	MyChatView *chatView = [[MyChatView alloc] initWith:groupId];
 	chatView.hidesBottomBarWhenPushed = YES;
 	[self.navigationController pushViewController:chatView animated:YES];
 }
@@ -211,7 +211,7 @@
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	PFObject *user = recents[indexPath.row];
-	[self actionChat:user.objectId];
+	[self actionChat:user[PF_USER_FULLNAME]];
 }
 
 @end

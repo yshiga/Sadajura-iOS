@@ -27,7 +27,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
-	[Parse setApplicationId:@"tQF0B0q8onRust06RRrsxjAGnzGTXPCmB8ctwyj8" clientKey:@"tztIECS5r47UhoCz67jtafbkB4abFi0B1NWiVJCM"];
+    
+     [Parse setApplicationId:@"mI07XtFWwWbuPYsGdecFfXUcd0fUIgN6GCJ9lGIW" clientKey:@"AzNGS4HUmca5u32f8nasZ0yBDnezKQ9ul6qwCj1G"];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 //	[PFTwitterUtils initializeWithConsumerKey:@"kS83MvJltZwmfoWVoyE1R6xko" consumerSecret:@"YXSupp9hC2m1rugTfoSyqricST9214TwYapQErBcXlP1BrSfND"];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,7 +53,6 @@
 	self.settingsView = [[SettingsView alloc] init];
 
 	NavigationController *navController1 = [[NavigationController alloc] initWithRootViewController:self.recentView];
-//	NavigationController *navController2 = [[NavigationController alloc] initWithRootViewController:self.groupsView];
 //	NavigationController *navController3 = [[NavigationController alloc] initWithRootViewController:self.peopleView];
 	NavigationController *navController4 = [[NavigationController alloc] initWithRootViewController:self.settingsView];
 

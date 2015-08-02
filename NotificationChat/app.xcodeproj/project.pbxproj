@@ -82,7 +82,6 @@
 		291A2C641B08EEC100E0E68C /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2BF71B08EEC100E0E68C /* NavigationController.m */; };
 		291A2C651B08EEC100E0E68C /* ProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2BFB1B08EEC100E0E68C /* ProfileView.m */; };
 		291A2C661B08EEC100E0E68C /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 291A2BFC1B08EEC100E0E68C /* ProfileView.xib */; };
-		291A2C671B08EEC100E0E68C /* ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2BFE1B08EEC100E0E68C /* ChatView.m */; };
 		291A2C681B08EEC100E0E68C /* PhotoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C011B08EEC100E0E68C /* PhotoMediaItem.m */; };
 		291A2C691B08EEC100E0E68C /* VideoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C031B08EEC100E0E68C /* VideoMediaItem.m */; };
 		291A2C6A1B08EEC100E0E68C /* PremiumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A2C061B08EEC100E0E68C /* PremiumView.m */; };
@@ -157,6 +156,7 @@
 		29EB240E19E9292500D7AA97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EB240D19E9292500D7AA97 /* AppDelegate.m */; };
 		29EB241619E9292500D7AA97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EB241519E9292500D7AA97 /* Images.xcassets */; };
 		29EB241919E9292500D7AA97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29EB241719E9292500D7AA97 /* LaunchScreen.xib */; };
+		66C188631B6DE536003188A3 /* MyChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C188621B6DE536003188A3 /* MyChatView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -309,8 +309,6 @@
 		291A2BFA1B08EEC100E0E68C /* ProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileView.h; sourceTree = "<group>"; };
 		291A2BFB1B08EEC100E0E68C /* ProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileView.m; sourceTree = "<group>"; };
 		291A2BFC1B08EEC100E0E68C /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
-		291A2BFD1B08EEC100E0E68C /* ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatView.h; sourceTree = "<group>"; };
-		291A2BFE1B08EEC100E0E68C /* ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatView.m; sourceTree = "<group>"; };
 		291A2C001B08EEC100E0E68C /* PhotoMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoMediaItem.h; sourceTree = "<group>"; };
 		291A2C011B08EEC100E0E68C /* PhotoMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoMediaItem.m; sourceTree = "<group>"; };
 		291A2C021B08EEC100E0E68C /* VideoMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMediaItem.h; sourceTree = "<group>"; };
@@ -409,6 +407,8 @@
 		29EB241519E9292500D7AA97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		29EB241819E9292500D7AA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		29EB254F19E92ACD00D7AA97 /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		66C188621B6DE536003188A3 /* MyChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChatView.m; sourceTree = "<group>"; };
+		66C188641B6DE548003188A3 /* MyChatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyChatView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -736,6 +736,7 @@
 		291A2BF41B08EEC100E0E68C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66C188611B6DE512003188A3 /* MyChat */,
 				291A2BF51B08EEC100E0E68C /* Application */,
 				291A2BF81B08EEC100E0E68C /* Chat */,
 				291A2C041B08EEC100E0E68C /* Premium */,
@@ -760,8 +761,6 @@
 			isa = PBXGroup;
 			children = (
 				291A2BF91B08EEC100E0E68C /* 03_Profile */,
-				291A2BFD1B08EEC100E0E68C /* ChatView.h */,
-				291A2BFE1B08EEC100E0E68C /* ChatView.m */,
 				291A2BFF1B08EEC100E0E68C /* MediaItems */,
 			);
 			path = Chat;
@@ -1061,6 +1060,15 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		66C188611B6DE512003188A3 /* MyChat */ = {
+			isa = PBXGroup;
+			children = (
+				66C188621B6DE536003188A3 /* MyChatView.m */,
+				66C188641B6DE548003188A3 /* MyChatView.h */,
+			);
+			name = MyChat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1210,7 +1218,6 @@
 				291A2B8D1B08ED2E00E0E68C /* AFURLResponseSerialization.m in Sources */,
 				291A2BAA1B08ED2E00E0E68C /* JSQMessagesTimestampFormatter.m in Sources */,
 				291A2B861B08ED2E00E0E68C /* AFHTTPRequestOperation.m in Sources */,
-				291A2C671B08EEC100E0E68C /* ChatView.m in Sources */,
 				291A2B8C1B08ED2E00E0E68C /* AFURLRequestSerialization.m in Sources */,
 				291A2C8A1B08EEC100E0E68C /* PFUser+Util.m in Sources */,
 				291A2C8E1B08EEC100E0E68C /* common.m in Sources */,
@@ -1252,6 +1259,7 @@
 				291A2BA91B08ED2E00E0E68C /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */,
 				291A2B8B1B08ED2E00E0E68C /* AFURLConnectionOperation.m in Sources */,
 				291A2BAC1B08ED2E00E0E68C /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
+				66C188631B6DE536003188A3 /* MyChatView.m in Sources */,
 				291A2BB11B08ED2E00E0E68C /* JSQMessage.m in Sources */,
 				291A2BA71B08ED2E00E0E68C /* JSQMessagesAvatarImageFactory.m in Sources */,
 				291A2BB31B08ED2E00E0E68C /* JSQMessagesBubbleImage.m in Sources */,
