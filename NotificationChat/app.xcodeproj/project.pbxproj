@@ -158,6 +158,11 @@
 		29EB241919E9292500D7AA97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29EB241719E9292500D7AA97 /* LaunchScreen.xib */; };
 		66C188631B6DE536003188A3 /* MyChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C188621B6DE536003188A3 /* MyChatView.m */; };
 		66C188681B6E812C003188A3 /* WishlistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C188671B6E812C003188A3 /* WishlistView.m */; };
+		66C1886C1B6E94FB003188A3 /* hampton.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 66C1886B1B6E94FB003188A3 /* hampton.jpeg */; };
+		66C188701B6E9810003188A3 /* birthdays.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 66C1886D1B6E9810003188A3 /* birthdays.jpeg */; };
+		66C188711B6E9810003188A3 /* bigpony.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 66C1886E1B6E9810003188A3 /* bigpony.jpeg */; };
+		66C188721B6E9810003188A3 /* airmax.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 66C1886F1B6E9810003188A3 /* airmax.jpeg */; };
+		66C188741B6E981C003188A3 /* legackhaki.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 66C188731B6E981C003188A3 /* legackhaki.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -412,6 +417,11 @@
 		66C188641B6DE548003188A3 /* MyChatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyChatView.h; sourceTree = "<group>"; };
 		66C188661B6E8116003188A3 /* WishlistView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WishlistView.h; sourceTree = "<group>"; };
 		66C188671B6E812C003188A3 /* WishlistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishlistView.m; sourceTree = "<group>"; };
+		66C1886B1B6E94FB003188A3 /* hampton.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hampton.jpeg; sourceTree = "<group>"; };
+		66C1886D1B6E9810003188A3 /* birthdays.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = birthdays.jpeg; sourceTree = "<group>"; };
+		66C1886E1B6E9810003188A3 /* bigpony.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bigpony.jpeg; sourceTree = "<group>"; };
+		66C1886F1B6E9810003188A3 /* airmax.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = airmax.jpeg; sourceTree = "<group>"; };
+		66C188731B6E981C003188A3 /* legackhaki.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = legackhaki.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -922,6 +932,11 @@
 		29A5A4941B2DA72900EE7928 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				66C188731B6E981C003188A3 /* legackhaki.jpeg */,
+				66C1886B1B6E94FB003188A3 /* hampton.jpeg */,
+				66C1886D1B6E9810003188A3 /* birthdays.jpeg */,
+				66C1886E1B6E9810003188A3 /* bigpony.jpeg */,
+				66C1886F1B6E9810003188A3 /* airmax.jpeg */,
 				29A5A4951B2DA72900EE7928 /* chat */,
 				29A5A49D1B2DA72900EE7928 /* premium */,
 				29A5A4A91B2DA72900EE7928 /* recent */,
@@ -1164,6 +1179,7 @@
 				29A5A4CC1B2DA72900EE7928 /* tab_settings@2x.png in Resources */,
 				29A5A4B41B2DA72900EE7928 /* chat_audio@2x.png in Resources */,
 				29A5A4BE1B2DA72900EE7928 /* premium04@2x.png in Resources */,
+				66C188711B6E9810003188A3 /* bigpony.jpeg in Resources */,
 				291A2BC71B08ED2E00E0E68C /* Info.plist in Resources */,
 				291A2BC61B08ED2E00E0E68C /* JSQMessagesTypingIndicatorFooterView.xib in Resources */,
 				29A5A4C81B2DA72900EE7928 /* stickers_blank@2x.png in Resources */,
@@ -1176,18 +1192,21 @@
 				29A5A4B81B2DA72900EE7928 /* chat_pictures@2x.png in Resources */,
 				29A5A4BC1B2DA72900EE7928 /* premium02@2x.png in Resources */,
 				29A5A4BA1B2DA72900EE7928 /* chat_videos@2x.png in Resources */,
+				66C188721B6E9810003188A3 /* airmax.jpeg in Resources */,
 				29A5A4B71B2DA72900EE7928 /* chat_location@2x.png in Resources */,
 				29EB241919E9292500D7AA97 /* LaunchScreen.xib in Resources */,
 				291A2C6F1B08EEC100E0E68C /* RecentView.xib in Resources */,
 				291A2BBA1B08ED2E00E0E68C /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
 				291A2BF21B08ED4800E0E68C /* privacy.html in Resources */,
 				29A5A4CA1B2DA72900EE7928 /* tab_people@2x.png in Resources */,
+				66C188701B6E9810003188A3 /* birthdays.jpeg in Resources */,
 				291A2BF31B08ED4800E0E68C /* terms.html in Resources */,
 				29A5A4C01B2DA72900EE7928 /* premium06@2x.png in Resources */,
 				291A2C661B08EEC100E0E68C /* ProfileView.xib in Resources */,
 				291A2BC11B08ED2E00E0E68C /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
 				291A2C961B08EEC100E0E68C /* RegisterView.xib in Resources */,
 				29A5A4C31B2DA72900EE7928 /* premium09@2x.png in Resources */,
+				66C188741B6E981C003188A3 /* legackhaki.jpeg in Resources */,
 				291A2C7F1B08EEC100E0E68C /* SettingsView.xib in Resources */,
 				29A5A4C21B2DA72900EE7928 /* premium08@2x.png in Resources */,
 				29A5A4CB1B2DA72900EE7928 /* tab_recent@2x.png in Resources */,
@@ -1199,6 +1218,7 @@
 				29A5A4BB1B2DA72900EE7928 /* premium01@2x.png in Resources */,
 				291A2C6D1B08EEC100E0E68C /* RecentCell.xib in Resources */,
 				29A5A4BD1B2DA72900EE7928 /* premium03@2x.png in Resources */,
+				66C1886C1B6E94FB003188A3 /* hampton.jpeg in Resources */,
 				29A5A4C41B2DA72900EE7928 /* premium10@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
