@@ -85,8 +85,7 @@
 	user.password = password;
 	user.email = email;
 	user[PF_USER_EMAILCOPY] = email;
-	user[PF_USER_FULLNAME] = name;
-	user[PF_USER_FULLNAME_LOWER] = [name lowercaseString];
+	user[PF_USER_USERNAME] = name;
 	[user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
 	{
 		if (error == nil)

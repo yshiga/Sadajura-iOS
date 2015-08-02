@@ -14,6 +14,7 @@
 @interface MyChatView()
 {
     NSString *recipient;
+    NSTimer *timer;
 }
 
 @property (strong, nonatomic) NSMutableArray *messages;
@@ -39,8 +40,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // ① 自分の senderId, senderDisplayName を設定
-    self.senderId = [PFUser currentUser][PF_USER_FULLNAME];
-    self.senderDisplayName = [PFUser currentUser][PF_USER_FULLNAME];
+    self.senderId = [PFUser currentUser][PF_USER_USERNAME];
+    self.senderDisplayName = [PFUser currentUser][PF_USER_USERNAME];
     
     // ② MessageBubble (背景の吹き出し) を設定
     JSQMessagesBubbleImageFactory *bubbleFactory = [JSQMessagesBubbleImageFactory new];
@@ -52,10 +53,19 @@
     // ④ メッセージデータの配列を初期化
     self.messages = [NSMutableArray array];
     
+    [self loadMessages];
+}
+
+
+- (void)loadMessages {
     
-        PFQuery *query = [PFQuery queryWithClassName:PF_MESSAGE_CLASS_NAME];
-    
-    
+//    NSString* where = @"sender == 'michael' AND receiver == 'yuichi' OR sender == 'yuichi' AND receiver == 'michael'";
+    NSString* whereFormat = @"sender == '%@' AND receiver == '%@' OR sender == '%@' AND receiver == '%@'";
+    NSString* username = [PFUser currentUser][PF_USER_USERNAME];
+    NSString* where = [[NSString alloc]initWithFormat:whereFormat, recipient,username,username,recipient];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:where];
+
+    PFQuery *query = [PFQuery queryWithClassName:PF_MESSAGE_CLASS_NAME predicate:predicate];
     
 		[query orderByDescending:PF_MESSAGE_CREATEDAT];
 		[query setLimit:50];
@@ -64,6 +74,7 @@
 			if (error == nil)
 			{
                 
+                self.messages = [NSMutableArray array];
                 for (PFObject *object in [objects reverseObjectEnumerator])
 				{
                     
@@ -88,6 +99,21 @@
     
 }
 
+- (void)viewDidAppear:(BOOL)animated
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+{
+    [super viewDidAppear:animated];
+    timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(loadMessages) userInfo:nil repeats:YES];
+}
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+- (void)viewWillDisappear:(BOOL)animated
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+{
+    [super viewWillDisappear:animated];
+    [timer invalidate];
+}
 #pragma mark - JSQMessagesViewController
 
 // ⑤ Sendボタンが押下されたときに呼ばれる
@@ -108,7 +134,7 @@
     
     
     PFObject *object = [PFObject objectWithClassName:PF_MESSAGE_CLASS_NAME];
-    object[PF_MESSAGE_SENDER] = [PFUser currentUser][PF_USER_FULLNAME];
+    object[PF_MESSAGE_SENDER] = [PFUser currentUser][PF_USER_USERNAME];
 	object[PF_MESSAGE_RECIPIENT] = recipient;
 	object[PF_MESSAGE_TEXT] = text;
 

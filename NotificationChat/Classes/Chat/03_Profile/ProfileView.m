@@ -90,7 +90,7 @@
 				[imageUser setFile:user[PF_USER_PICTURE]];
 				[imageUser loadInBackground];
 				
-				labelName.text = user[PF_USER_FULLNAME];
+				labelName.text = user[PF_USER_USERNAME];
 			}
 		}
 		else [ProgressHUD showError:@"Network error."];

@@ -51,7 +51,7 @@
 //	[imageUser setFile:lastUser[PF_USER_PICTURE]];
 //	[imageUser loadInBackground];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	labelDescription.text = recent[PF_USER_FULLNAME];
+	labelDescription.text = recent[PF_USER_USERNAME];
 //	labelLastMessage.text = recent[PF_RECENT_LASTMESSAGE];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 //	NSTimeInterval seconds = [[NSDate date] timeIntervalSinceDate:recent[PF_USER_OBJECTID]];

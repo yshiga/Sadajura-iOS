@@ -82,8 +82,7 @@
 {
 	PF_Twitter *twitter = [PFTwitterUtils twitter];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	user[PF_USER_FULLNAME] = twitter.screenName;
-	user[PF_USER_FULLNAME_LOWER] = [twitter.screenName lowercaseString];
+	user[PF_USER_USERNAME] = twitter.screenName;
 	user[PF_USER_TWITTERID] = twitter.userId;
 	[user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
 	{
@@ -167,8 +166,7 @@
 		}];
 		//-----------------------------------------------------------------------------------------------------------------------------------------
 		user[PF_USER_EMAILCOPY] = userData[@"email"];
-		user[PF_USER_FULLNAME] = userData[@"name"];
-		user[PF_USER_FULLNAME_LOWER] = [userData[@"name"] lowercaseString];
+		user[PF_USER_USERNAME] = userData[@"name"];
 		user[PF_USER_FACEBOOKID] = userData[@"id"];
 		user[PF_USER_PICTURE] = filePicture;
 		user[PF_USER_THUMBNAIL] = fileThumbnail;
@@ -198,7 +196,7 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	ParsePushUserAssign();
-	[ProgressHUD showSuccess:[NSString stringWithFormat:@"Welcome back %@!", user[PF_USER_FULLNAME]]];
+	[ProgressHUD showSuccess:[NSString stringWithFormat:@"Welcome back %@!", user[PF_USER_USERNAME]]];
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 

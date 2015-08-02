@@ -211,7 +211,7 @@
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	PFObject *user = recents[indexPath.row];
-	[self actionChat:user[PF_USER_FULLNAME]];
+	[self actionChat:user[PF_USER_USERNAME]];
 }
 
 @end

@@ -80,7 +80,7 @@
 		if (user != nil)
 		{
 			ParsePushUserAssign();
-			[ProgressHUD showSuccess:[NSString stringWithFormat:@"Welcome back %@!", user[PF_USER_FULLNAME]]];
+			[ProgressHUD showSuccess:[NSString stringWithFormat:@"Welcome back %@!", user[PF_USER_USERNAME]]];
 			[self dismissViewControllerAnimated:YES completion:nil];
 		}
 		else [ProgressHUD showError:error.userInfo[@"error"]];
