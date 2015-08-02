@@ -143,9 +143,13 @@
 - (void)actionCompose
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
-	UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil
-			   otherButtonTitles:@"Single recipient", @"Multiple recipients", @"Address Book", @"Facebook Friends", nil];
-	[action showFromTabBar:[[self tabBarController] tabBar]];
+//	UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil
+//			   otherButtonTitles:@"Single recipient", @"Multiple recipients", @"Address Book", @"Facebook Friends", nil];
+//	[action showFromTabBar:[[self tabBarController] tabBar]];
+    			SelectSingleView *selectSingleView = [[SelectSingleView alloc] init];
+    selectSingleView.delegate = self;
+    NavigationController *navController = [[NavigationController alloc] initWithRootViewController:selectSingleView];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 #pragma mark - UIActionSheetDelegate
